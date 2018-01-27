@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede1e1">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="注册"
+    android:textColor="#000"
+    android:textSize="50dp"
+    android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+        android:background="#ddfcfb">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:hint="请输入用户名（暂时只支持数字）"
+            android:paddingLeft="16dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:hint="请输入密码（暂时只支持数字）"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="注册"
+        android:background="#b4e8f1"/>
+    <Button
+        android:id="@+id/retu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="返回登陆"
+        android:background="#b4e8f1"/>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomcat服务已成功部署到个人阿里云服务器，完成功能须要联网。"
+        android:textColor="#ff0d01"/>
+</LinearLayout>

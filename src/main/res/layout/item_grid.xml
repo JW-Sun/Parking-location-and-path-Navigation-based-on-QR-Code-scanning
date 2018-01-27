@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp" >
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="我的动态" />
+
+    <ImageView
+        android:id="@+id/imv_icon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:layout_below="@id/txv_title"
+        android:layout_weight="0.0"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_imv" />
+
+    <TextView
+        android:id="@+id/txv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imv_icon"
+        android:layout_toRightOf="@+id/imv_icon"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:singleLine="true"
+        android:text="抬头看，看前方路；低头看，看脚下路" />
+
+    <kongjiandongtai.GridListView
+        android:id="@+id/grd_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_content"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/imv_icon"
+        android:layout_weight="1.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grd_item"
+        android:text="要来评论嘛？"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/txv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/grd_item"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+</RelativeLayout>
